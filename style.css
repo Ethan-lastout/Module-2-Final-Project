@@ -253,13 +253,13 @@ header .row {
   margin: 32px 0;
 }
 .header__email {
-    width: 100%;
-    max-width: 448px;
-    height: 68px;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 100%;
+  max-width: 448px;
+  height: 68px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header__customers {
@@ -1158,6 +1158,20 @@ MOBILE RESPONSIVENESS ↓
     padding-bottom: 5rem;
   }
 
+  /* FEATURES */
+
+  .features {
+    max-width: 768px;
+  }
+
+  .feature__row {
+    padding: 32px 8px;
+    margin: 0px 16px;
+  }
+
+  .feature__para {
+    max-width: none;
+  }
   /* PRICING */
 
   .plans {
@@ -1190,10 +1204,6 @@ MOBILE RESPONSIVENESS ↓
     flex-direction: column-reverse;
   }
   #steps .row,
-  #testimonials .row {
-    flex-direction: column;
-    align-items: center;
-  }
   #pricing .row {
     margin-top: 40px;
   }
@@ -1202,8 +1212,22 @@ MOBILE RESPONSIVENESS ↓
     font-size: 14px;
   }
 
-  /* TESTIMONIALS */
+  /* FEATURES */
 
+  .features {
+    justify-content: center;
+  }
+
+  .feature {
+    width: auto;
+    max-width: 384px;
+  }
+
+  /* TESTIMONIALS */
+  #testimonials .row {
+    flex-direction: column;
+    align-items: center;
+  }
   .quality__description,
   .quality__img--wrapper,
   .steps__description,
@@ -1273,6 +1297,25 @@ MOBILE RESPONSIVENESS ↓
 
   .section__title {
     font-size: 30px;
+  }
+
+  /* FEATURES */
+
+  #features .section__title,
+  #pricing .section__title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .feature__row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature__para {
+    margin-top: 4px;
+    line-height: 2;
   }
 
   /* TESTIMONIALS */
